@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FretUp — Comprends la théorie de la guitare avec tes morceaux</title>
+<meta name="description" content="FretUp t'apprend la théorie de la guitare à partir des morceaux que tu joues déjà : notes, intervalles, accords, pentatonique. L'app t'écoute, sans compte, gratuite pendant la bêta.">
+<link rel="canonical" href="https://fretup.fun/index.html">
+<link rel="alternate" hreflang="fr" href="https://fretup.fun/index.html">
+<link rel="alternate" hreflang="en" href="https://fretup.fun/index-en.html">
+<link rel="alternate" hreflang="de" href="https://fretup.fun/index-de.html">
+<link rel="alternate" hreflang="x-default" href="https://fretup.fun/index.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#E7ECE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1410" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FretUp">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:url" content="https://fretup.fun/index.html">
+<meta property="og:title" content="FretUp — La théorie de la guitare, sans l'ennui.">
+<meta property="og:description" content="Des leçons nées de tes morceaux, des jeux au micro, un manche qui sonne. Sans compte, 100 % sur ton téléphone.">
+<meta property="og:image" content="https://fretup.fun/og/og-fr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FretUp : le manche avec les notes qui montent">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fretup.fun/og/og-fr.png">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('fretup-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<script>
+(function () {
+  // First visit only: send German and English browsers to their page. An explicit
+  // language pick (theme.js) is remembered and always wins.
+  try {
+    if (localStorage.getItem('fretup-lang')) return;
+    var l = (navigator.language || '').slice(0, 2);
+    var page = { de: 'index-de.html', en: 'index-en.html' }[l];
+    if (page) location.replace(page);
+  } catch (e) {}
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MobileApplication","name":"FretUp","operatingSystem":"Android","applicationCategory":"EducationalApplication","description":"FretUp t'apprend la théorie de la guitare à partir des morceaux que tu joues déjà : notes, intervalles, accords, pentatonique. L'app t'écoute, sans compte, gratuite pendant la bêta.","inLanguage":["fr","en","de"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Mathys Lab"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"C'est gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pendant la bêta tout est ouvert. Une partie des contenus avancés pourra devenir payante plus tard ; l'essentiel pour apprendre restera gratuit."}},{"@type":"Question","name":"Il me faut une guitare ?","acceptedAnswer":{"@type":"Answer","text":"Elle aide, mais pas besoin : le mode « Sans guitare » remplace le micro par le toucher, pour tous les jeux et les leçons."}},{"@type":"Question","name":"À qui ça s'adresse ?","acceptedAnswer":{"@type":"Answer","text":"Aux guitaristes autodidactes de 1 à 5 ans de pratique que la théorie classique ennuie. Électrique ou acoustique ; la basse viendra plus tard."}},{"@type":"Question","name":"Pourquoi le micro ?","acceptedAnswer":{"@type":"Answer","text":"Pour vérifier ce que tu joues : la hauteur d'une note, un accord gratté. Le son est analysé sur le téléphone et n'est ni enregistré ni envoyé."}}]}]}</script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">
+        <img class="mark" src="favicon.svg" alt="" width="30" height="30">
+        <span>Fret<span class="up">Up</span></span>
+      </a>
+      <div class="topbar-controls">
+        <nav class="lang-switch" aria-label="Langue">
+          <a href="index-de.html">DE</a>
+          <a href="index.html" class="active">FR</a>
+          <a href="index-en.html">EN</a>
+        </nav>
+        <div class="theme-switch" role="group" aria-label="Thème">
+          <button type="button" data-theme-choice="light" title="Thème clair" aria-label="Thème clair">☀️</button>
+          <button type="button" data-theme-choice="system" title="Thème du système" aria-label="Thème du système">🖥️</button>
+          <button type="button" data-theme-choice="dark" title="Thème sombre" aria-label="Thème sombre">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="kicker">Guitare · théorie · sans ennui</p>
+          <h1>Comprends enfin <em>pourquoi</em> ça sonne.</h1>
+          <p class="lead">FretUp t'apprend la théorie de la guitare à partir des morceaux que tu joues déjà. Pas de solfège : le manche, tes oreilles et ta guitare.</p>
+          <div class="cta-row">
+            <span class="cta" aria-disabled="true">Bientôt sur Google Play</span>
+          </div>
+          <p class="cta-note">Bêta fermée en préparation. Tu veux la tester ? <a href="mailto:contact@fretup.fun">Écris-nous</a></p>
+        </div>
+        <div class="hero-visual" aria-hidden="true"><svg viewBox="0 0 520 330" role="img" aria-label="">
+  <g stroke="var(--line)" stroke-width="7" stroke-linecap="round">
+    <line x1="24" y1="50" x2="496" y2="50"/><line x1="24" y1="120" x2="496" y2="120"/>
+    <line x1="24" y1="190" x2="496" y2="190"/><line x1="24" y1="260" x2="496" y2="260"/>
+  </g>
+  <circle cx="100" cy="260" r="21" fill="var(--muted)"/>
+  <circle cx="216" cy="190" r="23" fill="var(--muted)"/>
+  <circle cx="332" cy="120" r="25" fill="var(--muted)"/>
+  <circle cx="440" cy="50" r="37" fill="var(--accent)"/>
+</svg></div>
+      </section>
+
+      <section class="features">
+        <h2>Apprendre en jouant</h2>
+        <div class="grid">
+        <article class="card"><span class="n">01</span><h3>Des leçons parties de tes morceaux</h3><p>Une leçon commence par un riff ou un enchaînement que tu connais, puis explique ce qui s'y passe : les 12 notes, les intervalles, les accords, la pentatonique, la tonalité.</p></article>
+        <article class="card"><span class="n">02</span><h3>L'app t'écoute</h3><p>L'accordeur, les jeux de notes et le « Joue-le » écoutent ta vraie guitare. Une corde, une note, un accord gratté : elle te dit ce qui est juste et ce qui manque.</p></article>
+        <article class="card"><span class="n">03</span><h3>Un manche qui sonne</h3><p>Touche une case, tu entends la note. Les accords, les gammes et les intervalles sont toujours montrés sur un manche horizontal, comme tu le vois en jouant.</p></article>
+        <article class="card"><span class="n">04</span><h3>Ton oreille travaille aussi</h3><p>Plus aigu ou plus grave, rejouer une note, reconnaître un intervalle : des jeux courts, sans guitare s'il le faut.</p></article>
+        <article class="card"><span class="n">05</span><h3>Des défis à chronométrer</h3><p>Changements d'accords, pentatonique, bends précis, métronome qui monte en tempo. Tes records restent sur ton téléphone.</p></article>
+        <article class="card"><span class="n">06</span><h3>Rien ne te met la pression</h3><p>Pas de série quotidienne : on compte par semaine. Les révisions reviennent quand il faut, jamais en culpabilisant.</p></article>
+        </div>
+      </section>
+
+      <section class="local">
+        <h2>100 % sur ton téléphone</h2>
+        <p>Pas de compte, pas de serveur, pas de publicité, pas de pistage. Ta progression reste sur ton appareil, et le micro n'enregistre rien : le son est analysé sur le moment, puis oublié. Export et import de ta sauvegarde en un geste. L'app existe en français, anglais et allemand, avec les notes en Do Ré Mi, en C D E ou en notation allemande.</p>
+      </section>
+
+      <section class="faq">
+        <h2>Questions fréquentes</h2>
+        <details><summary>C'est gratuit ?</summary><p>Oui, pendant la bêta tout est ouvert. Une partie des contenus avancés pourra devenir payante plus tard ; l'essentiel pour apprendre restera gratuit.</p></details>
+        <details><summary>Il me faut une guitare ?</summary><p>Elle aide, mais pas besoin : le mode « Sans guitare » remplace le micro par le toucher, pour tous les jeux et les leçons.</p></details>
+        <details><summary>À qui ça s'adresse ?</summary><p>Aux guitaristes autodidactes de 1 à 5 ans de pratique que la théorie classique ennuie. Électrique ou acoustique ; la basse viendra plus tard.</p></details>
+        <details><summary>Pourquoi le micro ?</summary><p>Pour vérifier ce que tu joues : la hauteur d'une note, un accord gratté. Le son est analysé sur le téléphone et n'est ni enregistré ni envoyé.</p></details>
+      </section>
+
+      <section class="closing">
+        <h2>Prêt à entendre la théorie ?</h2>
+        <p>Disponible sur Android bientôt. Pour rejoindre la bêta ou donner ton avis : <a href="mailto:contact@fretup.fun">contact@fretup.fun</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Mathys Lab — FretUp
+      <div class="legal-links">
+        <a href="support.html">Aide et contact</a>
+        <a href="impressum.html">Mentions légales</a>
+        <a href="datenschutz.html">Politique de confidentialité</a>
+        <a href="nutzungsbedingungen.html">Conditions d'utilisation</a>
+      </div>
+    </footer>
+  </div>
+  <script src="theme.js" defer></script>
+</body>
+</html>
